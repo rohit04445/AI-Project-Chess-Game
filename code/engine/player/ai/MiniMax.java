@@ -6,7 +6,7 @@ import engine.board.Move;
 import engine.board.Board.MoveStatus;
 import engine.player.Player;
 
-public class MiniMax implements MoveStrategy {
+public class MiniMax  {
 
     private final BoardEvaluator evaluator;
     private long boardsEvaluated;
@@ -14,17 +14,15 @@ public class MiniMax implements MoveStrategy {
     int depth;
 
     public MiniMax(int depth) {
-        this.evaluator = new SimpleBoardEvaluator();
+        this.evaluator = new BoardEvaluator();
         this.boardsEvaluated = 0;
         this.depth=depth;
     }
 
-    @Override
     public String getName() {
         return "MiniMax";
     }
 
-    @Override
     public long getNumBoardsEvaluated() {
         return this.boardsEvaluated;
     }

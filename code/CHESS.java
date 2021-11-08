@@ -8,3 +8,4 @@ public class CHESS {
      Table.get().show();
     }
 }
+

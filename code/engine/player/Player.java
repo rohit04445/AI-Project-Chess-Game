@@ -9,13 +9,13 @@ import engine.board.Move;
 import engine.board.Board.MoveStatus;
 import engine.pieces.King;
 import engine.pieces.Piece;
-import engine.player.ai.MoveStrategy;
+import engine.player.ai.MiniMax;
 
 public abstract class Player {
 
     protected final Board board;
     protected final List<Move> legalMoves;
-    private MoveStrategy strategy;
+    private MiniMax strategy;
 
     Player(final Board board) {
         this.board = board;
@@ -38,7 +38,7 @@ public abstract class Player {
         return getPlayerKing().isInStaleMate();
     }
 
-    public MoveStrategy getMoveStrategy() {
+    public MiniMax getMoveStrategy() {
         return this.strategy;
     }
 
@@ -125,8 +125,8 @@ public abstract class Player {
         return this.legalMoves;
     }
 
-    public void setMoveStrategy(final MoveStrategy strategy) {
-        this.strategy = strategy;
+    public void setMoveStrategy(final MiniMax miniMax) {
+        this.strategy = miniMax;
     }
 
     public abstract List<Piece> getActivePieces();

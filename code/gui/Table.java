@@ -42,7 +42,7 @@ import engine.board.Move.MoveFactory;
 import engine.pieces.Piece;
 import engine.player.Player;
 import engine.player.ai.MiniMax;
-import engine.player.ai.SimpleBoardEvaluator;
+import engine.player.ai.BoardEvaluator;
 
 
 public final class Table extends Observable{
@@ -122,7 +122,7 @@ public final class Table extends Observable{
         evaluateBoardMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                System.out.println(new SimpleBoardEvaluator().evaluate(chessBoard));
+                System.out.println(new BoardEvaluator().evaluate(chessBoard));
             }
         });
         file_menu.add(evaluateBoardMenuItem);
