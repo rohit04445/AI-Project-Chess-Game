@@ -1,4 +1,4 @@
-package com.chess.engine.classic.board;
+package engine.classic.board;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,11 +6,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.chess.engine.classic.pieces.Pawn;
-import com.chess.engine.classic.pieces.Piece;
-import com.chess.engine.classic.player.BlackPlayer;
-import com.chess.engine.classic.player.Player;
-import com.chess.engine.classic.player.WhitePlayer;
+import engine.classic.pieces.Pawn;
+import engine.classic.pieces.Piece;
+import engine.classic.player.BlackPlayer;
+import engine.classic.player.Player;
+import engine.classic.player.WhitePlayer;
 
 public final class Board {
 

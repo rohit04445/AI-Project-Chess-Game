@@ -1,8 +1,8 @@
-package com.chess.engine.classic.player.ai;
+package engine.classic.player.ai;
 
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.pieces.Piece;
-import com.chess.engine.classic.player.Player;
+import engine.classic.board.Board;
+import engine.classic.pieces.Piece;
+import engine.classic.player.Player;
 
 public class SimpleBoardEvaluator
         implements BoardEvaluator {

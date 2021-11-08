@@ -1,9 +1,9 @@
-package com.chess.gui;
+package gui;
 
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.player.Player;
-import com.chess.gui.Table.PlayerType;
+import engine.classic.Alliance;
+import engine.classic.player.Player;
+import gui.Table.PlayerType;
 
 import javax.swing.*;
 import java.awt.*;

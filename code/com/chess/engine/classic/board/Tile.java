@@ -1,6 +1,6 @@
-package com.chess.engine.classic.board;
+package engine.classic.board;
 
-import com.chess.engine.classic.pieces.Piece;
+import engine.classic.pieces.Piece;
 
 public final class Tile {
 

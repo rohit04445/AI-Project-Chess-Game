@@ -1,4 +1,4 @@
-package com.chess.engine.classic.board;
+package engine.classic.board;
 
 public interface BoardConfigurator {
 

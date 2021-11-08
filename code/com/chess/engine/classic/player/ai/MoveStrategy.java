@@ -1,7 +1,7 @@
-package com.chess.engine.classic.player.ai;
+package engine.classic.player.ai;
 
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.Move;
+import engine.classic.board.Board;
+import engine.classic.board.Move;
 
 public interface MoveStrategy {
 

@@ -1,15 +1,15 @@
-package com.chess.engine.classic.player;
+package engine.classic.player;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.Board.MoveStatus;
-import com.chess.engine.classic.board.Move;
-import com.chess.engine.classic.pieces.King;
-import com.chess.engine.classic.pieces.Piece;
-import com.chess.engine.classic.player.ai.MoveStrategy;
+import engine.classic.Alliance;
+import engine.classic.board.Board;
+import engine.classic.board.Board.MoveStatus;
+import engine.classic.board.Move;
+import engine.classic.pieces.King;
+import engine.classic.pieces.Piece;
+import engine.classic.player.ai.MoveStrategy;
 
 public abstract class Player {
 

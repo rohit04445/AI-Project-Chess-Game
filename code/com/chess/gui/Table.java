@@ -1,4 +1,4 @@
-package com.chess.gui;
+package gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -33,16 +33,16 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.Board.MoveStatus;
-import com.chess.engine.classic.board.Move;
-import com.chess.engine.classic.board.Move.MoveFactory;
-import com.chess.engine.classic.board.StandardBoardConfigurator;
-import com.chess.engine.classic.board.Tile;
-import com.chess.engine.classic.pieces.Piece;
-import com.chess.engine.classic.player.Player;
-import com.chess.engine.classic.player.ai.MiniMax;
-import com.chess.engine.classic.player.ai.SimpleBoardEvaluator;
+import engine.classic.board.Board;
+import engine.classic.board.Board.MoveStatus;
+import engine.classic.board.Move;
+import engine.classic.board.Move.MoveFactory;
+import engine.classic.board.StandardBoardConfigurator;
+import engine.classic.board.Tile;
+import engine.classic.pieces.Piece;
+import engine.classic.player.Player;
+import engine.classic.player.ai.MiniMax;
+import engine.classic.player.ai.SimpleBoardEvaluator;
 
 
 public final class Table extends Observable{

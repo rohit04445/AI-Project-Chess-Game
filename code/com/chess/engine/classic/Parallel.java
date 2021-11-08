@@ -1,4 +1,4 @@
-package com.chess.engine.classic;
+package engine.classic;
 
 import java.util.ArrayList;
 import java.util.Collection;

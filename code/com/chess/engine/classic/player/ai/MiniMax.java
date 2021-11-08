@@ -1,10 +1,10 @@
-package com.chess.engine.classic.player.ai;
+package engine.classic.player.ai;
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.Board.MoveStatus;
-import com.chess.engine.classic.board.Move;
-import com.chess.engine.classic.player.Player;
+import engine.classic.Alliance;
+import engine.classic.board.Board;
+import engine.classic.board.Board.MoveStatus;
+import engine.classic.board.Move;
+import engine.classic.player.Player;
 
 public class MiniMax implements MoveStrategy {
 
@@ -42,19 +42,25 @@ public class MiniMax implements MoveStrategy {
             final Board imaginary = board.createCopy();
             final MoveStatus status = Player.makeMove(imaginary, move);
             if (status == MoveStatus.DONE) {
-                current_value = alliance.isWhite() ? min(imaginary, depth - 1) : max(imaginary, depth - 1);
-                System.out.println("\t" + getName() + " move " + move + " scores " + current_value);
-                if (alliance.isWhite() &&
-                        current_value >= highest_seen_value) {
-                    highest_seen_value = current_value;
-                    best_move = move;
-                } else if (alliance.isBlack() &&
-                        current_value <= lowest_seen_value) {
-                    lowest_seen_value = current_value;
-                    best_move = move;
+                if(alliance.isWhite()){
+                    current_value =min(imaginary, depth - 1);
+                    System.out.println("\t" + getName() + " move " + move + " scores " + current_value);
+                    if(current_value >= highest_seen_value) {
+                        highest_seen_value = current_value;
+                        best_move = move;
                 }
             }
+                else{
+                    current_value =  max(imaginary, depth - 1);
+                    System.out.println("\t" + getName() + " move " + move + " scores " + current_value);
+                    if(current_value <= lowest_seen_value) {
+                        lowest_seen_value = current_value;
+                        best_move = move;
+                }
+               
+            }
         }
+    }
         this.executionTime = System.currentTimeMillis() - startTime;
         System.out.printf("%s SELECTS %s [#boards = %d time taken = %d ms, rate = %.1f\n", board.currentPlayer(),
                 best_move, this.boardsEvaluated, this.executionTime, (1000 * ((double)this.boardsEvaluated/this.executionTime)));

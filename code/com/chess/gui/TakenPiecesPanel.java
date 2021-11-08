@@ -1,4 +1,4 @@
-package com.chess.gui;
+package gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -15,8 +15,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EtchedBorder;
 
-import com.chess.engine.classic.board.Move;
-import com.chess.engine.classic.pieces.Piece;
+import engine.classic.board.Move;
+import engine.classic.pieces.Piece;
 
 class TakenPiecesPanel extends JPanel {
 

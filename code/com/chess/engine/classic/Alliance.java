@@ -1,6 +1,6 @@
-package com.chess.engine.classic;
+package engine.classic;
 
-import com.chess.engine.classic.board.Board;
+import engine.classic.board.Board;
 
 public enum Alliance {
 

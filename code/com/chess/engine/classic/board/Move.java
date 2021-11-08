@@ -1,12 +1,12 @@
-package com.chess.engine.classic.board;
+package engine.classic.board;
 
-import com.chess.engine.classic.pieces.King;
-import com.chess.engine.classic.pieces.Pawn;
-import com.chess.engine.classic.pieces.Piece;
-import com.chess.engine.classic.pieces.Piece.Type;
-import com.chess.engine.classic.pieces.Queen;
-import com.chess.engine.classic.pieces.Rook;
-import com.chess.engine.classic.player.Player;
+import engine.classic.pieces.King;
+import engine.classic.pieces.Pawn;
+import engine.classic.pieces.Piece;
+import engine.classic.pieces.Piece.Type;
+import engine.classic.pieces.Queen;
+import engine.classic.pieces.Rook;
+import engine.classic.player.Player;
 
 public class Move {
 

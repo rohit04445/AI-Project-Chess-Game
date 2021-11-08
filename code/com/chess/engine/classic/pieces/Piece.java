@@ -1,10 +1,10 @@
-package com.chess.engine.classic.pieces;
+package engine.classic.pieces;
 
 import java.util.List;
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.Move;
+import engine.classic.Alliance;
+import engine.classic.board.Board;
+import engine.classic.board.Move;
 
 public abstract class Piece {
 

@@ -1,15 +1,15 @@
-package com.chess.engine.classic.player;
+package engine.classic.player;
 
 import java.util.List;
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.Move.KingSideCastleMove;
-import com.chess.engine.classic.board.Move.QueenSideCastleMove;
-import com.chess.engine.classic.board.Tile;
-import com.chess.engine.classic.pieces.King;
-import com.chess.engine.classic.pieces.Piece;
-import com.chess.engine.classic.pieces.Rook;
+import engine.classic.Alliance;
+import engine.classic.board.Board;
+import engine.classic.board.Move.KingSideCastleMove;
+import engine.classic.board.Move.QueenSideCastleMove;
+import engine.classic.board.Tile;
+import engine.classic.pieces.King;
+import engine.classic.pieces.Piece;
+import engine.classic.pieces.Rook;
 
 public class WhitePlayer extends Player {
 

@@ -1,13 +1,13 @@
-package com.chess.engine.classic.pieces;
+package engine.classic.pieces;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.Move;
-import com.chess.engine.classic.board.Move.AttackMove;
-import com.chess.engine.classic.board.Tile;
+import engine.classic.Alliance;
+import engine.classic.board.Board;
+import engine.classic.board.Move;
+import engine.classic.board.Move.AttackMove;
+import engine.classic.board.Tile;
 
 public final class Knight extends Piece {
 

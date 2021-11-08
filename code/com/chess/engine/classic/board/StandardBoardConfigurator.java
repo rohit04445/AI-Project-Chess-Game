@@ -1,12 +1,12 @@
-package com.chess.engine.classic.board;
+package engine.classic.board;
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.pieces.Bishop;
-import com.chess.engine.classic.pieces.King;
-import com.chess.engine.classic.pieces.Knight;
-import com.chess.engine.classic.pieces.Pawn;
-import com.chess.engine.classic.pieces.Queen;
-import com.chess.engine.classic.pieces.Rook;
+import engine.classic.Alliance;
+import engine.classic.pieces.Bishop;
+import engine.classic.pieces.King;
+import engine.classic.pieces.Knight;
+import engine.classic.pieces.Pawn;
+import engine.classic.pieces.Queen;
+import engine.classic.pieces.Rook;
 
 public class StandardBoardConfigurator
 implements BoardConfigurator {
