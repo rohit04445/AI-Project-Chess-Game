@@ -31,10 +31,13 @@ class GameHistoryPanel extends JPanel {
     public void redo(final List<Move> moveHistory) {
         int currentRow = 0;
         model.clear();
+        if(moveHistory.size()==0)
+        System.out.println("clear");
         for (final Move move : moveHistory) {
             if (move.getMovedPiece().getPieceAlliance().isWhite()) {
                 this.model.setValueAt(move, currentRow, 0);
             }
+
             else if (move.getMovedPiece().getPieceAlliance().isBlack()) {
                 this.model.setValueAt(move, currentRow, 1);
                 currentRow++;
@@ -81,6 +84,9 @@ class GameHistoryPanel extends JPanel {
         public void clear() {
             values.clear();
             setRowCount(0);
+            getDataVector().removeAllElements();
+            fireTableDataChanged();
+            
         }
 
         @Override
@@ -120,10 +126,10 @@ class GameHistoryPanel extends JPanel {
             }
             if(col == 0) {
                 currentRow.setWhiteMove((Move) aValue);
-                fireTableRowsInserted(row, row);
+                fireTableRowsInserted(row, col);
             } else  if(col == 1) {
                 currentRow.setBlackMove((Move)aValue);
-                fireTableCellUpdated(row, col);
+               fireTableCellUpdated(row, col);
             }
         }
 
