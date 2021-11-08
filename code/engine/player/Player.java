@@ -93,8 +93,7 @@ public abstract class Player {
 
     public String playerInfo() {
         return ("Player is: " +this.getAlliance() + "\nlegal moves =" + getLegalMoves() + "\ninCheck = " +
-               getPlayerKing().isInCheck() + "\nisInCheckMate = " +getPlayerKing().isInCheckMate() +
-                "\nisCastled = " +getPlayerKing().isCastled())+ "\n";
+               getPlayerKing().isInCheck() + "\nisInCheckMate = " +getPlayerKing().isInCheckMate())+ "\n";
     }
 
     private boolean hasEscapeMoves(final Board board) {

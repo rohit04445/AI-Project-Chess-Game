@@ -1,5 +1,3 @@
-
-
 import gui.Table;
 
 public class CHESS {

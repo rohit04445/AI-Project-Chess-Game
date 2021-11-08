@@ -132,8 +132,10 @@ public final class Table extends Observable{
         legalMovesMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                System.out.println(chessBoard.getWhitePieces());
-                System.out.println(chessBoard.getBlackPieces());
+
+                System.out.println("WHITE PIECES "+ chessBoard.getWhitePieces());
+
+                System.out.println("BLACK PIECES "+chessBoard.getBlackPieces());
                 System.out.println(chessBoard.currentPlayer().playerInfo());
                 System.out.println(chessBoard.currentPlayer().getOpponent().playerInfo());
             }

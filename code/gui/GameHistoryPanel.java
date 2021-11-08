@@ -31,8 +31,6 @@ class GameHistoryPanel extends JPanel {
     public void redo(final List<Move> moveHistory) {
         int currentRow = 0;
         model.clear();
-        if(moveHistory.size()==0)
-        System.out.println("clear");
         for (final Move move : moveHistory) {
             if (move.getMovedPiece().getPieceAlliance().isWhite()) {
                 this.model.setValueAt(move, currentRow, 0);
